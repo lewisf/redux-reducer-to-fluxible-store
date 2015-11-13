@@ -16,7 +16,7 @@ to the redux reducer function we write. The good thing is that this is a small p
 Example is below.
 
 MyReducer.js
-```
+```javascript
 const createReducerStore = require('redux-reducer-to-fluxible-store');
 
 function myReducer(state = {}, action) {
@@ -52,13 +52,13 @@ module.exports = createReducerStore(
 ```
 
 FluxibleApp.js
-```
+```javascript
 const Fluxible = require('fluxible');
 
 const app = new Fluxible({
   component: ...
 });
 
-app.registerStore(require('./reducers/MyReducer');
+app.registerStore(require('./reducers/MyReducer'));
 
 ```
